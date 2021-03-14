@@ -15,7 +15,7 @@ export default function TodoItem(props) {
       >
         {contents}
       </span>
-      <span style={{ color: "red", cursor: "pointer" }} onClick={deleteTodo}>
+      <span style={{ color: "blue", cursor: "pointer" }} onClick={deleteTodo}>
         del
       </span>
     </div>
