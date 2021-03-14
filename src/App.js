@@ -5,7 +5,10 @@ import TextInput from "./components/TextInput"
 import TodoItem from "./components/TodoItem"
 
 function App() {
-  const [todos, setTodos] = useState([])
+  const [todos, setTodos] = useState([
+    { text: "공부하기", checked: false },
+    { text: "청소하기", checked: false },
+  ])
   const [text, setText] = useState("")
 
   const createTodo = () => {
@@ -21,9 +24,9 @@ function App() {
     todos[i].checked = !todos[i].checked
     setTodos([...todos])
   }
-  
+
   const deleteTodo = (i) => {
-    setTodos([...todos.slice(0, i), ...todos.slice(i+1, todos.length)])
+    setTodos([...todos.slice(0, i), ...todos.slice(i + 1, todos.length)])
   }
 
   return (
