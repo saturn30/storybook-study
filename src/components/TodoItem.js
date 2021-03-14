@@ -11,10 +11,11 @@ export default function TodoItem(props) {
           textDecorationLine: checked ? "line-through" : "none",
           marginLeft: 10,
         }}
+        onClick={toggleCheck}
       >
         {contents}
       </span>
-      <span style={{ color: "red" }} onClick={deleteTodo}>
+      <span style={{ color: "red", cursor: "pointer" }} onClick={deleteTodo}>
         del
       </span>
     </div>
