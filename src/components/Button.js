@@ -6,9 +6,9 @@ export default function Button(props) {
     <button
       style={{
         width: 100,
-        padding: 15,
+        padding: 10,
         borderRadius: 20,
-        backgroundColor: "purple",
+        backgroundColor: "blue",
         color: "white",
       }}
       onClick={onClick}
