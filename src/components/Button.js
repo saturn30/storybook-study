@@ -6,7 +6,7 @@ export default function Button(props) {
     <button
       style={{
         width: 100,
-        padding: 10,
+        padding: 15,
         borderRadius: 20,
         backgroundColor: "purple",
         color: "white",
