@@ -4,7 +4,13 @@ export default function Button(props) {
   const { onClick, children } = props
   return (
     <button
-      style={{ width: 100, padding: 10, borderRadius: 20, backgroundColor: "lavender" }}
+      style={{
+        width: 100,
+        padding: 15,
+        borderRadius: 20,
+        backgroundColor: "purple",
+        color: "white",
+      }}
       onClick={onClick}
     >
       {children}
